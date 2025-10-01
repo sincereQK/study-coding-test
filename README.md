@@ -1,1 +1,1 @@
-# GoTradeVer2
+# study-coding-test
