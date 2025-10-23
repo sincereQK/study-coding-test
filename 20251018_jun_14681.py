@@ -56,3 +56,15 @@ for score in test_list :
     new_list.append(score/max_score *100)  # 새로운 점수 생성
 test_avg = sum(new_list)/n
 print(test_avg)
+
+#10810
+n, m=map(int, input().split())
+box = [0]*n
+
+for _ in range(m) :
+    i,j,k = map(int, input().split())
+    for idx in range(i, j+1):
+        box[idx-1] = k
+for i in range(n):
+    print(box[i], end=' ')
+
