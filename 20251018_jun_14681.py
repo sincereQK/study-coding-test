@@ -68,3 +68,10 @@ for _ in range(m) :
 for i in range(n):
     print(box[i], end=' ')
 
+# 11718
+while True :
+    try :
+        print(input())
+    except EOFError:
+        break
+
