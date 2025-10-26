@@ -88,3 +88,10 @@ for row in range(9):
 
 print(max_num)
 print(max_row, max_col)
+
+#9086
+n=int(input())
+for i in range(n):
+    word=input()
+    print(word[0]+word[-1])
+
