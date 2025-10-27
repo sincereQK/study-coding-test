@@ -95,3 +95,10 @@ for i in range(n):
     word=input()
     print(word[0]+word[-1])
 
+#3003
+chess = [1, 1, 2, 2, 2, 8]
+
+myInput = list(map(int, input().split()))
+
+for i in range(len(chess)):
+  print(chess[i] - myInput[i], end = ' ')
