@@ -112,3 +112,15 @@ for i in range(1, n + 1):
 for i in range(n - 1, 0, -1):
     print(" " * (n - i) + "*" * (2 * i - 1))
 
+#2745
+N,B = input().split(" ")
+N = ''.join(reversed(N))
+B = int(B)
+number = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+result = 0 
+
+for x in range(len(N)-1,-1,-1):
+	sum = number.index(N[x]) * (B**x)
+	result += sum
+    
+print(result)
