@@ -124,3 +124,12 @@ for x in range(len(N)-1,-1,-1):
 	result += sum
     
 print(result)
+
+#2720
+t = int(input())
+for _ in range(t):
+    c = int(input())
+
+    for i in [25, 10, 5, 1]:
+        print(c // i, end=" ")
+        c %= i
