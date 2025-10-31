@@ -133,3 +133,10 @@ for _ in range(t):
     for i in [25, 10, 5, 1]:
         print(c // i, end=" ")
         c %= i
+
+
+#2903
+n = int(input())
+
+side = (1 + 2**n)
+print(side**2)
