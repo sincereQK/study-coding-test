@@ -140,3 +140,12 @@ n = int(input())
 
 side = (1 + 2**n)
 print(side**2)
+
+#2292
+n = int(input())
+nums_pileup = 1
+cnt = 1
+while n > nums_pileup :
+    nums_pileup += 6 * cnt
+    cnt += 1
+print(cnt)
