@@ -215,4 +215,5 @@ else:
     print(-1)
 
 
+#10926
 print(input() + "??!")
