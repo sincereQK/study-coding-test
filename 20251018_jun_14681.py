@@ -214,3 +214,5 @@ if len(sosu_list) > 0:
 else:
     print(-1)
 
+
+print(input() + "??!")
