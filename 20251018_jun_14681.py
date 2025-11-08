@@ -214,6 +214,9 @@ if len(sosu_list) > 0:
 else:
     print(-1)
 
-
 #10926
 print(input() + "??!")
+
+#1085
+x,y,w,h=map(int,input().split())
+print(min(x,y,w-x,h-y))
