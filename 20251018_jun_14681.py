@@ -220,3 +220,6 @@ print(input() + "??!")
 #1085
 x,y,w,h=map(int,input().split())
 print(min(x,y,w-x,h-y))
+
+#15894
+print(int(input()) * 4)
