@@ -238,3 +238,8 @@ for i in range(3):
     if y_nums.count(y_nums[i]) == 1:
         y4 = y_nums[i]
 print(x4, y4)
+
+#24264
+n = int(input())
+print(n**2)
+print(2)
