@@ -364,3 +364,12 @@ num2 = sorted(num)
 
 for i in range(len(num)):
     print(num2[i])
+
+#2587
+li = list()
+for _ in range(5):
+    li.append(int(sys.stdin.readline()))
+    
+li.sort()
+print(sum(li) // 5)
+print(li[2])
