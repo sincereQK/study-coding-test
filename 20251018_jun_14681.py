@@ -373,3 +373,9 @@ for _ in range(5):
 li.sort()
 print(sum(li) // 5)
 print(li[2])
+
+#25305
+n, k = map(int, input().split())
+scores = list(map(int, input().split()))
+scores.sort(reverse=True)
+print(scores[k - 1])
