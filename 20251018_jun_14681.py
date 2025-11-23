@@ -379,3 +379,18 @@ n, k = map(int, input().split())
 scores = list(map(int, input().split()))
 scores.sort(reverse=True)
 print(scores[k - 1])
+
+#2751
+# import sys
+
+n = int(input())
+nums = []
+
+for _ in range(n):
+    nums.append(int(sys.stdin.readline()))
+
+nums.sort()
+
+for num in nums:
+    print(num)
+
