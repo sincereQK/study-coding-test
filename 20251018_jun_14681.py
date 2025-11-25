@@ -409,3 +409,8 @@ for i in range(len(arr)):
         for _ in range(arr[i]):
             print(i)
 
+#1427
+nums = list(map(int, str(input())))
+nums.sort(reverse=True)
+for i in nums:
+    print(i,end='')
