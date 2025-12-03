@@ -120,7 +120,12 @@ S_b = set(map(int, input().split()))
 
 print(len(S_a - S_b) + len(S_b - S_a))
 
-#
+#11478
+data = input()
 
+result = set()
+for i in range(len(data)):
+    for j in range(i, len(data)):
+        result.add(data[i:j+1])
 
-
+print(len(result))
