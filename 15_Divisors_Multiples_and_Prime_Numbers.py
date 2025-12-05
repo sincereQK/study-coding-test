@@ -15,4 +15,13 @@ for i in range(num):
   x, y = map(int, input().split(" "))
   print(lcm(x, y))
 
+#13241
+a, b = map(int, input().split())
+aa, bb = a, b
+ 
+while b > 0:
+    a, b = b, a % b
+ 
+print(aa*bb//a)
+
 #
