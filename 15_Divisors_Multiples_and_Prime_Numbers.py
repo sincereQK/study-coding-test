@@ -38,4 +38,28 @@ C, D = map(int, input().split())
 N = gcd(A*D + C*B, B*D) 
 print((A*D + C*B)//N, B*D//N)
 
+#2485
+import sys
+from math import gcd
+
+n = int(sys.stdin.readline())
+
+num = list()
+for _ in range(n):
+    num.append(int(sys.stdin.readline()))
+    
+li = list()
+for i in range(1, n):
+    li.append(num[i] - num[i - 1])
+    
+g = li[0]
+for i in range(1, len(li)):
+    g = gcd(g, li[i])
+
+result = 0
+for i in li:
+    result += i // g - 1
+
+print(result)
+
 #
