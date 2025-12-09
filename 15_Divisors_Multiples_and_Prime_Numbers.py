@@ -62,4 +62,33 @@ for i in li:
 
 print(result)
 
+#4134
+def isprime(num):     #소수인지 판별하는 함수. 소수면 True를 반환. 아니면 False를 반환
+    start=2
+
+    while 2<=start<=num**0.5:  #루트N까지만 나누어보는 것이 시간단축의 핵심
+        if num%start==0:      #나눠지면 합성수이므로 False를 반환
+          return False
+        start+=1
+    return True
+
+num=int(input())
+for _ in range(num):
+    test= int(input())
+    while True: 
+        if test==0 or test==1:  #0과 1이 입력되면 2를 출력
+            print(2)
+            break
+        if isprime(test):       #소수라면 출력
+            print(test)
+            break
+        else:
+            test+=1            #소수가 아니면 1을 더해서 다시 수행
+
+
 #
+
+
+#
+
+
