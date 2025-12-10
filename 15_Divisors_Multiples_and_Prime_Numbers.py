@@ -86,9 +86,20 @@ for _ in range(num):
             test+=1            #소수가 아니면 1을 더해서 다시 수행
 
 
+#1929
+N, M = map(int, input().split())
+
+for i in range(N, M+1):
+    if i == 1: # 1은 통과
+        continue
+        
+    for j in range(2, int(i**0.5) + 1): # 2 ~ 제곱근 사이 값 확인
+        if i % j == 0: # 나누어 떨어진다면 그대로 종료 (else문 실행 X)
+            break
+    else: # for문이 잘 실행이 되었다면 print(i) 출력
+        print(i)
+
 #
 
-
 #
-
 
