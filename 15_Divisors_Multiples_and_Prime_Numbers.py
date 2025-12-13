@@ -144,6 +144,14 @@ for _ in range(T):
             
     print(count)
 
-#
+#13909
+import sys
+N = int(sys.stdin.readline())
+result = 0
+x = 1
+while x*x <= N:
+    x += 1
+    result +=1
+print(result)
 
 
