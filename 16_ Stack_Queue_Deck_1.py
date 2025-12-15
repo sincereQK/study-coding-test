@@ -25,7 +25,16 @@ for i in range(N): # 5가지의 명령에 대해서 코드 작성
             continue
         print(-1)
 
-#
+#10773
+k = int(input())
+stack = []
+for i in range(k):
+    money = int(input())
+    if money == 0:
+        stack.pop()
+    else:
+        stack.append(money)
 
+print(sum(stack))
 
 #
