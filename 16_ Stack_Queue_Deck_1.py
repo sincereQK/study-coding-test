@@ -89,8 +89,37 @@ while True:
         else:
             print("no")
 
-#
+#12789
+import sys
 
+N = int(sys.stdin.readline())
+
+wait = list(map(int, sys.stdin.readline().split()))
+stack = list()
+num = 1
+while (wait):
+    if (len(stack) > 0) and (stack[-1] == num):
+        stack.pop()
+        num += 1
+    else:
+        if (wait[0] == num):
+            num += 1
+        else:
+            stack.append(wait[0])
+
+        del wait[0]
+
+while (stack):
+    if (stack[-1] == num):
+        stack.pop()
+        num += 1
+    else:
+        break
+
+if (len(stack) == 0):
+    print('Nice')
+else:
+    print('Sad')
 
 #
 
