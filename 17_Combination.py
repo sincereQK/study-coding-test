@@ -28,4 +28,11 @@ for j in range(1,k+1):
     c *= j
 print(int(a/(b*c)))
 
+#extra
+import math
+
+n, k = map(int, input().split())
+print(int(math.factorial(n)/(math.factorial(k)*math.factorial(n-k))))
+
+
 #
