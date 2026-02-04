@@ -68,5 +68,6 @@ ans = []
 N,K = map(int,input().split())
 merge_sort(list(map(int,input().split())))
 print(ans[K-1] if K <= len(ans) else -1) 
-    
-#
+
+#4779
+
