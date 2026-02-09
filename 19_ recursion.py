@@ -90,5 +90,38 @@ while True:
     except:
         break
 
+#2447
+N = int(input())
+stars = []
+ 
+for i in range(N):
+    if i % 3 == 1:
+        stars.append(["*", " ", "*"]*9)
+    else: 
+        stars.append(["*" for _ in range(N)])
+ 
+def make_blank(size, cnt, row, col):
+    third = size//3
+    blank = [" " for i in range(third)]
+ 
+    if col >= N:
+        return make_blank(size, 1, row+size, third)
+    elif row < N:
+        if cnt < third:
+            stars[row+cnt][col:col+third] = blank
+            return make_blank(size, cnt+1, row, col)
+        else:
+            stars[row][col:col+third] = blank
+            return make_blank(size, 1, row, col+size)
+ 
+size = 9
+while size <= N:
+    make_blank(size, 1, size//3, size//3)
+    size *= 3
+ 
+for line in stars:
+    print("".join(line))
+
 #
+
 
