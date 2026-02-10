@@ -122,6 +122,17 @@ while size <= N:
 for line in stars:
     print("".join(line))
 
-#
+#11729
+n=int(input())
+def hanoi(num,start,mid,end):
+    
+    if num==1:
+        print(start,end)
 
+    else:
+        hanoi(num-1,start,end,mid)
+        print(start,end)
+        hanoi(num-1,mid,start,end)
 
+print(2**n-1)
+hanoi(n,1,2,3)
