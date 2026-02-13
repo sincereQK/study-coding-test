@@ -33,5 +33,24 @@ def backtraking(start):
  
 backtraking(1)
 
+#15651
+import sys
+r=sys.stdin.readline
+N,M=map(int,r().split())
+l=[i+1 for i in range(N)]
+res=[]
+
+def dfs(cnt):
+    if cnt==M:
+        print(*res)
+        return
+
+    for i in range(N):
+        res.append(l[i])
+        dfs(cnt+1)
+        res.pop()
+
+dfs(0)
+
 #
 
