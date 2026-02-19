@@ -19,3 +19,4 @@ public class BOJ_2439 {
         System.out.println(sb.toString());
     }
 }
+
