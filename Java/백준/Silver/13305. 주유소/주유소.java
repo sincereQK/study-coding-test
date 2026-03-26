@@ -7,23 +7,21 @@ public class Main {
 
         int N = Integer.parseInt(br.readLine());
 
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
         long[] dist = new long[N-1];
         long[] cost = new long[N];
 
+        StringTokenizer st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N -1; i++) {
             dist[i] = Long.parseLong(st.nextToken());
         }
-
+        
         st = new StringTokenizer(br.readLine());
-
         for (int i = 0; i < N; i++) {
             cost[i] = Long.parseLong(st.nextToken());
         }
 
-        long totalCost = 0;
-        long minCost = dist[0]; // 출발할 때는 무조건 첫 번째 도시의 기름을 넣어야 함
+        long totalCost = 0; // 출력값
+        long minCost = cost[0]; // 출발할 때는 무조건 첫 번째 도시의 기름을 넣어야 함
 
         // 도시를 하나씩 지나가면서 계산
         for (int i = 0; i < N - 1; i++) {
