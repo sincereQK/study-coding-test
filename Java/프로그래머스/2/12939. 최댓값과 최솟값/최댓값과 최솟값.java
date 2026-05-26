@@ -2,6 +2,7 @@ import java.util.*;
 
 class Solution {
     public String solution(String s) {
+        // 공백을 기준으로 문자열 분리
         String[] arr = s.split(" ");
         
         int min = Integer.MAX_VALUE;
